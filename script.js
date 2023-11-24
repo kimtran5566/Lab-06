@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var loginModal = document.getElementById('loginModal');
     var closeButton = document.getElementById('closeButton');
     var submitBtn = document.getElementById('submitBtn');
-    var loginResult = document.getElementById('loginResult');
     var usernameInput = document.getElementById('username');
     var passwordInput = document.getElementById('password');
 
