@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var categories = document.querySelectorAll('nav li a');
+    var categories = document.querySelectorAll('#menu li');
 
     categories.forEach(function (category) {
         category.addEventListener('mouseover', function () {
@@ -21,11 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
     var submitBtn = document.getElementById('submitBtn');
     var usernameInput = document.getElementById('username');
     var passwordInput = document.getElementById('password');
+    var rememberMeCheckbox = document.getElementById('rememberPass');
 
     // Mở modal khi nhấn nút Đăng nhập
     loginButton.addEventListener('click', function () {
         loginModal.style.display = 'block';
-        rememberMeCheckbox.checked = localStorage.getItem('rememberMe') === 'true';
+        rememberMeCheckbox.checked = localStorage.getItem('rememberPass') === 'true';
     });
 
     // Đóng modal khi nhấn nút đóng (×)
