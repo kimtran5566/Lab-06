@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li id="search-box">
+                <input type="text" id="search-input" placeholder="Tìm kiếm...">
+                <div id="search-button"><i class="fa fa-search" aria-hidden="true"></i></div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Ví dụ thao tác JavaScript với HTML, CSS</h1>
+        <p>Nội dung đang cập nhật...</p>
+
+        <button id="loginButton">Đăng nhập</button>
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeButton">&times;</span>
+                <img src="./image/USER_AVA.jpg" alt="USER_AVA">
+                <form id="loginForm">
+                    <label for="username">Tên đăng nhập:</label><br>
+                    <input type="text" id="username" name="username" required><br><br>
+    
+                    <label for="password">Mật khẩu:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+    
+                    <button type="button" id="submitBtn">Đăng nhập</button>
+                    <label>
+                        <input type="checkbox" id="rememberPass"> Nhớ mật khẩu
+                    </label>
+                </form>
+                <p id="loginResult"></p>
+
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>  
